@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#038431</color>
+    <color name="colorPrimaryDark">#026b27</color>
+    <color name="colorAccent">#038431</color>
+    <color name="windowBackground">#f3f3f3</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#a8a8a8</color>
+
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorLinkText">#038431</color>
+    <color name="btnDefaultNormal">#038431</color>
+    <color name="btnDefaultPressed">#f3f3f3</color>
+</resources>

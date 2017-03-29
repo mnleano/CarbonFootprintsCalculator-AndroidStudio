@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvAppliancesName"
+        style="@style/textWhiteOverlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Appliances"
+        android:textColor="@android:color/black" />
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvWattage"
+        style="@style/textWhiteOverlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:text="Watts"
+        android:textColor="@android:color/black" />
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvHours"
+        style="@style/textWhiteOverlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:text="Hours"
+        android:textColor="@android:color/black" />
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvKWH"
+        style="@style/textWhiteOverlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:text="KwH"
+        android:textColor="@android:color/black" />
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_other"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Municipality: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvArea"
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baranggay: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Emission: "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvEmission"
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Emission: "
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Created: "
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvTimeStamp"
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Date Created: "
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="Distance Traveled: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvDistance"
+            style="@style/textBlackOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80km"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="Fuel Type: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvFuel"
+            style="@style/textBlackOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Type: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="Car category: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvCar"
+            style="@style/textBlackOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car category: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Model: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            android:id="@+id/tvYear"
+            style="@style/textBlackOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Model: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context="com.sti.carbonfootprintscalculator.activity.MainActivity">
+
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvTitle"
+        style="@style/textBlackOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp">
+
+        <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+            android:id="@+id/btnAppliances"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_inverse_selector"
+            android:text="Appliances"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_inverse_selector"
+            android:textSize="12sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+            android:id="@+id/btnVechicle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_inverse_selector"
+            android:text="Vehicle"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_inverse_selector"
+            android:textSize="12sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_inverse_selector"
+            android:text="History"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_inverse_selector"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+            android:id="@+id/btnReport"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_default_selector"
+            android:text="Report"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_default_selector"
+            android:textSize="12sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+            android:id="@+id/btnMap"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_default_selector"
+            android:text="Map"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_default_selector"
+            android:textSize="12sp" />
+
+        <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+            android:id="@+id/btnGraph"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_default_selector"
+            android:text="Graph"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_default_selector"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/earth_carbon" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/container"
+    android:background="@drawable/background_other"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal">
+
+        <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+            style="@style/textWhiteOverlaySmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Distance Traveled"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.sti.carbonfootprintscalculator.widget.EditTextGillSans
+            android:id="@+id/etTraveled"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="KM"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/black">
+
+            <requestFocus />
+        </com.sti.carbonfootprintscalculator.widget.EditTextGillSans>
+
+    </LinearLayout>
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        style="@style/textWhiteOverlaySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Fuel Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.sti.carbonfootprintscalculator.widget.RadioButtonGillSans
+            android:id="@+id/rbGasoline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Gasoline"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <com.sti.carbonfootprintscalculator.widget.RadioButtonGillSans
+            android:id="@+id/rbDiesel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diesel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        style="@style/textWhiteOverlaySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Vehicle Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/spVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/list_vehicle_type" />
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        style="@style/textWhiteOverlaySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Year Model"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/spVehicleYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/year_model" />
+
+    <Spinner
+        android:id="@+id/spAreas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/list_cavite" />
+
+    <com.sti.carbonfootprintscalculator.widget.ButtonGillSans
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/button_default_selector"
+        android:text="Calculate"
+        android:textColor="@drawable/button_text_default_selector" />
+</LinearLayout>
+

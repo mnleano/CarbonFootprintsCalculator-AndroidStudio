@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Carbon Footprints Calculator</string>
+
+    <string-array name="history_filter">
+        <item>All</item>
+        <item>Household Only</item>
+        <item>Vehicles Only</item>
+    </string-array>
+    <string-array name="list_appliances">
+        <item>Aircon</item>
+        <item>Computer</item>
+        <item>Electric Fan</item>
+        <item>Electric Kettle</item>
+        <item>Lights</item>
+        <item>Microwave</item>
+        <item>Oven</item>
+        <item>Television</item>
+    </string-array>
+    <string-array name="list_cavite">
+        <item>Alfonso</item>
+        <item>Amadeo</item>
+        <item>Bacoor</item>
+        <item>Carmona</item>
+        <item>Cavite City</item>
+        <item>Dasmariñas</item>
+        <item>General Emilio Aguinaldo</item>
+        <item>General Mariano Alvarez</item>
+        <item>General Trias</item>
+        <item>Imus</item>
+        <item>Indang</item>
+        <item>Kawit</item>
+        <item>Magallanes</item>
+        <item>Maragondon</item>
+        <item>Mendez</item>
+        <item>Naic</item>
+        <item>Noveleta</item>
+        <item>Rosario</item>
+        <item>Silang</item>
+        <item>Tagaytay</item>
+        <item>Tanza</item>
+        <item>Trece Martires</item>
+        <item>Ternate</item>
+    </string-array>
+    <string-array name="list_cavite_with_distance">
+        <item>Your Place</item>
+        <item>Alfonso (49.1km)</item>
+        <item>Amadeo (33.2km)</item>
+        <item>Bacoor (8.2km)</item>
+        <item>Carmona (25.5km)</item>
+        <item>Cavite City (15.9km)</item>
+        <item>Dasmariñas (12.8km)</item>
+        <item>General Emilio Aguinaldo (47.8km)</item>
+        <item>General Mariano Alvarez (20.9km)</item>
+        <item>General Trias (13.5km)</item>
+        <item>Imus</item>
+        <item>Indang (34.3km)</item>
+        <item>Kawit (10.5km)</item>
+        <item>Magallanes (52.2km)</item>
+        <item>Maragondon (39.2km)</item>
+        <item>Mendez (44.3km)</item>
+        <item>Naic (29.6km)</item>
+        <item>Noveleta (11.6km)</item>
+        <item>Rosario (12.2km)</item>
+        <item>Silang (23.0km)</item>
+        <item>Tagaytay (33.9km)</item>
+        <item>Tanza (20.2km)</item>
+        <item>Trece Martires (24.0)</item>
+        <item>Ternate (42.9km)</item>
+        <item>Outside Cavite</item>
+        <item></item>
+    </string-array>
+    <string-array name="list_vehicle_type">
+        <item>Small (Compacts eg. Wigo, Mirage, Eon, Picanto)</item>
+        <item>Mid-Size (Sedan eg. Vios, Lancer, Civic, City)</item>
+        <item>MiniVan (SUVs eg. Fortuner, Montero, Ecosport)</item>
+        <item>Offroader (4x4 pickups and trucks and bigger)</item>
+    </string-array>
+    <string-array name="year_model">
+        <item>1993 and earlier model</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008 - to present</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_api_key">AIzaSyCn4nVoKvMNh1mt2U_ZhYXfCV7m-xtloD0</string>
+
+</resources>

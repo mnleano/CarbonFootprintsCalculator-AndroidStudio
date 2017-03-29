@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvArea"
+        style="@style/textWhiteOverlaySmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Sample area"
+        android:textColor="@android:color/black" />
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvEmission"
+        style="@style/textWhiteOverlaySmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="123 tons"
+        android:textColor="@android:color/black" />
+
+    <com.sti.carbonfootprintscalculator.widget.TextviewGillSans
+        android:id="@+id/tvDate"
+        style="@style/textWhiteOverlaySmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="07:20 AM 08/22"
+        android:textColor="@android:color/black"
+        android:visibility="visible" />
+
+
+</LinearLayout>
