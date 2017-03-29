@@ -216,11 +216,11 @@ public class AppliancesActivity extends BaseActivity {
         Log.d(TAG, "ID: " + id);
 
         ContentValues values = new ContentValues();
-
+        int area = selectedArea - 1;
         values.put("id", id);
         values.put("emission_type", 0);
         values.put("emission_value", emission);
-        values.put("area", listArea.get(selectedArea - 1));
+        values.put("area", listArea.get(area));
         values.put("area_id", spAreas.getSelectedItemPosition());
         db.insert("tbl_emission_history", null, values);
 
@@ -235,9 +235,9 @@ public class AppliancesActivity extends BaseActivity {
             values.clear();
         }
 
-        Log.d(TAG, "Municipality ID: " + (selectedArea - 1) + " EMISSION: " + emission);
+        Log.d(TAG, "Municipality ID: " + area + " EMISSION: " + emission);
 
-        if (NetworkUtils.isInternetAvailable(this)) {
+        if (NetworkUtils.isInternetAvailable(this) && area !=  23) {
             startProgressDialog("Processing...");
             postEmission(String.valueOf(selectedArea - 1), emission);
         } else {

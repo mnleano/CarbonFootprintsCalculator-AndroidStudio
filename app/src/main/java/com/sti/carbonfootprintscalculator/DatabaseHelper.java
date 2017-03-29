@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "CFC_DB";
-    public static final int DB_VERSION = 3;
+    public static final int DB_VERSION = 4;
 
     private static DatabaseHelper mInstance = null;
 
@@ -28,7 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // TODO Auto-generated method stub
         db.execSQL("CREATE TABLE IF NOT EXISTS tbl_emission_history(id varchar, emission_type integer, emission_value real, area varchar, area_id integer)");
         db.execSQL("CREATE TABLE IF NOT EXISTS tbl_emission_household(id varchar, appliances_name varchar, wattage integer, hours integer)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS tbl_emission_vehicle(id varchar, km integer, fuelType varchar, carType varchar, yearModel varchar)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS tbl_emission_vehicle(id varchar, km real, fuelType varchar, carType varchar, yearModel varchar)");
 
         /**
          * Log.d("Vehicles", "KM: " + km); Log.d("Vehicles", "Fuel Type: " +

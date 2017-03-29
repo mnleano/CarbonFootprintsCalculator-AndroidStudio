@@ -63,6 +63,9 @@ public class VehiclesActivity extends BaseActivity {
     int selectedArea = 0;
     List<String> listArea;
 
+    String distance[] = {"49.1", "33.2", "8.2", "25.5", "15.9", "12.8", "47.8", "20.9", "13.5", "0", "34.4",
+            "10.5", "52.2", "39.2", "44.3", "29.6", "11.6", "12.2", "23.0", "33.9", "20.2", "24.0", "42.9", "0"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +98,9 @@ public class VehiclesActivity extends BaseActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 selectedArea = i;
+                if (etTraveled.getText().toString().trim().equals("") && selectedArea > 0 && selectedArea < 23) {
+                    etTraveled.setText(distance[selectedArea - 1]);
+                }
             }
 
             @Override
@@ -117,11 +123,11 @@ public class VehiclesActivity extends BaseActivity {
                 ToastBuilder.createLongToast(this, "Please enter total distance travelled");
             } else {
 
-                int km = 0;
+                double km = 0;
                 String fuel;
                 int fuelType;
 
-                km = Integer.parseInt(sKM);
+                km = Double.parseDouble(sKM);
 
                 if (rbDiesel.isChecked()) {
                     fuel = "Diesel";
@@ -180,18 +186,18 @@ public class VehiclesActivity extends BaseActivity {
         }
     }
 
-    private void addRecord(int km, String fuel, String type, String year, double emission) {
+    private void addRecord(double km, String fuel, String type, String year, double emission) {
         DatabaseHelper dbHelper = DatabaseHelper.getInstance(this);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         String id = Utils.getCurrentTime();
 
         ContentValues values = new ContentValues();
-
+        int area = selectedArea - 1;
         values.put("id", id);
         values.put("emission_type", 1);
         values.put("emission_value", emission);
-        values.put("area", listArea.get(selectedArea - 1));
+        values.put("area", listArea.get(area));
         values.put("area_id", spAreas.getSelectedItemPosition());
         db.insert("tbl_emission_history", null, values);
 
@@ -204,9 +210,9 @@ public class VehiclesActivity extends BaseActivity {
         db.insert("tbl_emission_vehicle", null, values);
         values.clear();
 
-        Log.d(TAG, "Municipality ID: " + (selectedArea - 1) + " EMISSION: " + emission);
+        Log.d(TAG, "Municipality ID: " + area + " EMISSION: " + emission);
 
-        if (NetworkUtils.isInternetAvailable(this)) {
+        if (NetworkUtils.isInternetAvailable(this) && area < 23) {
             startProgressDialog("Processing...");
             postEmission(String.valueOf(selectedArea - 1), emission);
         } else {
@@ -232,6 +238,7 @@ public class VehiclesActivity extends BaseActivity {
             }
         });
     }
+
     private double gas0(int yearModel) {
         switch (yearModel) {
             case 0:

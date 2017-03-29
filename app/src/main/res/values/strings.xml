@@ -40,32 +40,33 @@
         <item>Tanza</item>
         <item>Trece Martires</item>
         <item>Ternate</item>
+        <item>Outside Cavite</item>
     </string-array>
     <string-array name="list_cavite_with_distance">
         <item>Your Place</item>
-        <item>Alfonso (49.1km)</item>
-        <item>Amadeo (33.2km)</item>
-        <item>Bacoor (8.2km)</item>
-        <item>Carmona (25.5km)</item>
-        <item>Cavite City (15.9km)</item>
-        <item>Dasmariñas (12.8km)</item>
-        <item>General Emilio Aguinaldo (47.8km)</item>
-        <item>General Mariano Alvarez (20.9km)</item>
-        <item>General Trias (13.5km)</item>
+        <item>Alfonso</item>
+        <item>Amadeo</item>
+        <item>Bacoor</item>
+        <item>Carmona</item>
+        <item>Cavite City</item>
+        <item>Dasmariñas</item>
+        <item>General Emilio Aguinaldo</item>
+        <item>General Mariano Alvarez</item>
+        <item>General Trias</item>
         <item>Imus</item>
-        <item>Indang (34.3km)</item>
-        <item>Kawit (10.5km)</item>
-        <item>Magallanes (52.2km)</item>
-        <item>Maragondon (39.2km)</item>
-        <item>Mendez (44.3km)</item>
-        <item>Naic (29.6km)</item>
-        <item>Noveleta (11.6km)</item>
-        <item>Rosario (12.2km)</item>
-        <item>Silang (23.0km)</item>
-        <item>Tagaytay (33.9km)</item>
-        <item>Tanza (20.2km)</item>
-        <item>Trece Martires (24.0)</item>
-        <item>Ternate (42.9km)</item>
+        <item>Indang</item>
+        <item>Kawit </item>
+        <item>Magallanes</item>
+        <item>Maragondon</item>
+        <item>Mendez</item>
+        <item>Naic</item>
+        <item>Noveleta</item>
+        <item>Rosario</item>
+        <item>Silang</item>
+        <item>Tagaytay</item>
+        <item>Tanza</item>
+        <item>Trece Martire</item>
+        <item>Ternate</item>
         <item>Outside Cavite</item>
         <item></item>
     </string-array>
